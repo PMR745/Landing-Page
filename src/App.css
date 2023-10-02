@@ -1,38 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
 .App {
-  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  /* background-color: blueviolet; */
+  background: url("P:\Coding\React JS\landing-page\public\bg.jpg");
+  background-size: cover;
+  padding: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.dateTime {
+  background-color: #1212126f;
+  text-align: center;
+  width: 40vw;
+  margin: auto;
+  height: 15vh;
+  border-radius: 25px;
+  color: white;
+  font-size: 32px;
+  justify-content: space-around;
+}
+
+.date {
+  font-size: 30px;
+  padding-left: 25px;
+}
+
+.dateTime span p {
+  font-size: 15px;
+}
+
+.links {
+  background-color: rgba(223, 222, 222, 0.2);
+  margin: 25px auto;
+  width: 60vw;
+  height: 42vh;
+  border-radius: 25px;
+  align-items: flex-start !important;
+  padding-top: 15px;
+}
+
+.links ul {
+  /* background-color: red; */
+  max-width: 60vw;
+  height: 40vh;
+  align-items: start;
+  flex-wrap: wrap;
+}
+
+.linkElement {
+  color: white;
+  height: 70px;
+  width: 70px;
+  text-align: center;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.iconBg {
+  background-color: black;
+  height: 70px;
+  width: 70px;
+  border-radius: 12px;
+  margin-bottom: 5px;
+}
+
+.iconBg img {
+  height: 40px;
+}
+
+.addLink {
+  background-color: rgba(255, 255, 255, 0.265);
+  border-radius: 12px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.addBox {
+  background-color: #121212;
+  border-radius: 25px;
+  position: fixed;
+  top: 30%;
+  left: 35%;
+  height: 250px;
+  width: 400px;
+  position: absolute;
+}
+
+.boxTitle {
+  padding: 15px 0;
+}
+
+.addBox span {
+  display: block;
+  text-align: start;
+  padding: 10px 0;
+  padding-left: 25px;
+}
+
+.addBox input {
+  width: 90%;
+  background-color: #121212;
+  border: 2px solid #beadfa;
+  border-radius: 4px;
+  font-size: 15px;
+  padding: 6px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.addBox .btns {
+  /* background-color: red; */
+  margin-top: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btns button {
+  background-color: #beadfa;
+  border: 0;
+  border-radius: 3px;
+  margin-left: 15px;
+  width: 60px;
+  height: 20px;
 }
